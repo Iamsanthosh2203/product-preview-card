@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Preview Card</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Global Container -->
+    <div class="flex md:h-screen bg-[#f2ebe3] justify-center items-center">
+        <!-- Main Container -->
+        <main class="flex flex-col p-6 md:p-0 md:flex-row md:w-[50%]">
+            <!-- Image Container -->
+            <div class="basis-[50%]">
+                <img id="image" class="rounded-t-xl md:rounded-none md:rounded-l-xl h-full w-full" src="images/image-product-desktop.jpg">
+            </div>
+
+            <!-- Text conatiner -->
+            <div class="basis-[50%] bg-white rounded-b-xl md:rounded-b-none md:rounded-r-xl p-4 md:p-8 flex flex-col gap-6">
+                <p class="tracking-[4px] text-[#6c7289] text-sm">PERFUME</p>
+
+                <h1 class="text-2xl md:text-5xl font-semibold">Gabrielle Essence Eau De Parfum</h1>
+
+                <p class="text-[#6c7289] leading-6 pr-2">A floral, solar and voluptuous interpretation composed by Oliver Ploge, Perfumer-Creator for the House of CHANEL.</p>
+
+                <!-- Price Tag -->
+                <div class="flex gap-5 items-center">
+                    <h2 class="text-4xl font-[600] text-[#3c8067]">$149.99</h2>
+                    
+                    <p class="text-[#6c7289] line-through text-sm">$169.99</p>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="rounded-xl flex items-center gap-4 justify-center p-6 bg-[#3c8067]">
+                    <img src="images/icon-cart.svg">
+                    <h3 class="font-semibold text-white">Add to cart</h3>
+                </button>
+            </div>
+        </main>
+    </div>
+  </body>
+</html>

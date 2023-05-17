@@ -1,0 +1,17 @@
+*{
+    font-family: "Montserrat";
+}
+
+h1,h2{
+    font-family: "Fraunces";
+}
+
+button:hover{
+    background-color:rgb(28, 61, 49);
+}
+
+@media screen and (max-width: 600px) {
+    #image {
+      content: url('images/image-product-mobile.jpg');
+    }
+}
